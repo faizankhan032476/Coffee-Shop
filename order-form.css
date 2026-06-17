@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #fff8f5;
+    padding: clamp(15px, 4vw, 30px);
+}
+form{
+    width: 100%;
+    max-width: 850px;
+    height: max-content;
+    box-shadow: 0 0 10px #ccc;
+    margin-block: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fefefe;
+    padding: clamp(15px, 4vw, 30px);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.bage-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: blueviolet;
+    /* background-color: rgba(90, 50, 95, 0.7); */
+    background-color: rgba(108, 92, 231, 0.15);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: #a6abbb;
+    margin-bottom: 50px;
+}
+.row-1{
+    width: 90%;
+    display: flex;
+    gap: 30px;
+}
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+}
+.fieldset input{
+    width: 100%;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 30px;
+    outline: none;
+    font-size: 15px;
+}
+input[type=number]::-webkit-outer-spin-button ,
+input[type=number]::-webkit-inner-spin-button
+{
+    display: none;
+}
+label{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    margin-left: 3px;
+    color: rgba(1, 0, 0, 0.8);
+}
+span{
+    font-size: 13px;
+}
+.fieldset i{
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.fieldset{
+    flex: 1 1 250px;
+}
+textarea{
+    width: 100%;
+    min-height: 70px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 30px;
+    resize: vertical;
+}
+
+
+.row-2{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+.row-2 .fieldset input{
+    width: 230px;
+}
+.fieldset-select{
+    flex: 1 1 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.row-2 .fieldset-select select{
+    width: 100%;
+    padding: 8px 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    list-style: none;
+    border-radius: 5px;
+}
+.fieldset-select i{
+    position: absolute;
+    top: 35px;
+    left: 8px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.row-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+.row-3 .fieldset-select select{
+    width: 100%;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.row-3 .fieldset-select input[type=number]{
+    width: 100%;
+}
+.row-4{
+    width: 100%;
+}
+.row-3 fieldset{
+    position: relative;
+}
+.row-3 .fieldset-select select{
+    width: 100%;
+}
+.row-3 .fieldset input{
+    width: 100%;
+}
+.fieldset-select img{
+    position: absolute;
+    top: 17px;
+    left: -24px;
+    width: 80px;
+    height: 60px;
+}
+.row-4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.row-4 .fieldset textarea{
+    width: 100%;
+    min-height: 40px;
+    padding-top: 10px;
+    resize: vertical;
+    background-color: transparent;
+}
+.row-4 .fieldset img{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    left: -24px;
+}
+.row-5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.row-5 .order-now-btn{
+    width: 100%;
+}
+button{
+    width: 100%;
+    padding: 8px;
+    font-size: 19px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.last-line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.last-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    white-space: nowrap; /* text ko next line par jane se rokega */
+}
+
+.last-div i{
+    font-size: clamp(8px, 3.5vw , 20px);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.last-div p{
+    margin: 0;
+    font-size: clamp(12px, 2vw, 16px);
+}
+/* .last-line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+} */
+/* .last-div{
+    width: 100%;
+}
+.last-line p{
+    text-align: center;
+    width: 100%;
+}
+.last-line img{
+    position: absolute;
+    bottom: 38%;
+    left: 21%;
+    width: clamp(50px , 10vw , 80px);
+    height: clamp(40px , 7vw , 65px);
+} */
+
+.row-1 , .row-2 ,.row-3 ,.row-4 ,.row-5{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* @media (max-width:850px){
+    .last-line img{
+        display: none;
+    }
+} */
